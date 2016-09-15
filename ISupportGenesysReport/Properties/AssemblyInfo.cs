@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ISupportGenesysReport")]
+[assembly: AssemblyTitle("paas_demo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ISupportGenesysReport")]
+[assembly: AssemblyProduct("paas_demo")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("87bd3f55-5d7a-4b4c-bd8a-69e77ad52000")]
+[assembly: Guid("ab04a4b2-0ae2-4278-aad8-4727c1d04677")]
 
 // Version information for an assembly consists of the following four values:
 //
