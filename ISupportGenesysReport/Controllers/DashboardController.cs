@@ -47,11 +47,13 @@ namespace paas_demo.Controllers
         }
 
         public async Task<ActionResult> Report(string reportId)
-        {
+        {            
             using (var client = this.CreatePowerBIClient())
             {
                 var reportsResponse = await client.Reports.GetReportsAsync(this.workspaceCollection, this.workspaceId);
-                var report = reportsResponse.Value.FirstOrDefault(r => r.Id == reportId);
+                
+                var report = reportsResponse.Value.FirstOrDefault();
+                reportId = report.Id;
                 var embedToken = PowerBIToken.CreateReportEmbedToken(this.workspaceCollection, this.workspaceId, report.Id);
 
                 var viewModel = new ReportViewModel
